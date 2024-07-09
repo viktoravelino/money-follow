@@ -1,6 +1,7 @@
+import { useLocation } from "react-router-dom";
+
 import { NavItem } from "./nav-item";
 import { handleActive, routes } from "./nav.definitions";
-import { useLocation } from "react-router-dom";
 
 export function NavCore() {
   const router = useLocation();

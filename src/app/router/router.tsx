@@ -1,12 +1,15 @@
-import { Layout } from "@/components/layout";
-import { Transactions } from "@/pages/transactions/transactions";
 import { Navigate, Route, Routes } from "react-router-dom";
+
+import { Dashboard } from "@/pages/dashboard";
+import { Transactions } from "@/pages/transactions";
+
+import { Layout } from "@/components/layout";
 
 export function Router() {
   return (
     <Routes>
       <Route key="index" element={<Layout />}>
-        <Route path="/dashboard" element={<h1>Dashboard</h1>} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/categories" element={<h1>Categories</h1>} />
         <Route path="/accounts" element={<h1>Accounts</h1>} />

@@ -1,16 +1,13 @@
-import { ThemeProvider } from "@/components/theme-provider";
-
-import { Router } from "./router";
 import { BrowserRouter } from "react-router-dom";
+import { Router } from "@/app/router";
+import { ThemeProvider } from "@/app/providers/theme-provider";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {/* <TooltipProvider> */}
       <BrowserRouter>
         <Router />
       </BrowserRouter>
-      {/* </TooltipProvider> */}
     </ThemeProvider>
   );
 }

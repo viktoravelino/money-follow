@@ -1,4 +1,4 @@
-import { NavCore } from "../nav-core";
+import { NavCore } from "@/components/nav-core";
 
 export function Sidebar() {
   return (
